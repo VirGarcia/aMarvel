@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animación Marvel</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-size: 30px;
+		}
+		h1 {
+			background-color: lightblue;
+			text-align: center;
+		}
+		#contenedor {
+			width: 400px;
+			height: 400px;
+			background-color: lightblue;
+			position: relative;
+			margin:10px auto;
+			overflow: hidden;
+			border: 15px solid white;
+			box-shadow: 4px 4px 8px black;
+		}
+		img {
+			position: absolute;
+			animation-name: marvel;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes marvel {
+			0%   {top:    0px; left:    0px;}
+			23%  {top:    0px; left:    0px;}
+
+			25%  {top:    0px; left: -400px;}
+			48%  {top:    0px; left: -400px;}
+
+			50%  {top: -400px; left: -400px;}
+			73%  {top: -400px; left: -400px;}
+
+			75%  {top: -400px; left:    0px;}
+			98%  {top: -400px; left:    0px;}	
+					
+			100% {top:    0px; left:    0px;}
+		}
+
+
+	
+	</style>
+</head>
+<body>
+<h1>Animación Marvel</h1>
+<main id="contenedor">
+<img src="images/marvel.jpg">
+
+</main>
+</body>
+</html>
